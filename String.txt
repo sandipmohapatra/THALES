@@ -34,5 +34,61 @@ String s1=”kumar”;
 Now the reference s1 contain new data the old object data is lost.
 It is known as unreferenced object and garbage collector will remove it from memory.
 ---------------------------------------------------------
+Example -1
+------------------------
+class demo1
+{
 
+	public static void main(String args[])
+	{
+	String s1="Aptech Computer Center";
+	System.out.println(s1);
+	System.out.println(s1.toUpperCase());
+	System.out.println(s1.toLowerCase());
+	System.out.println(s1.indexOf('e'));
+	System.out.println(s1.lastIndexOf('e'));
+	System.out.println(s1.substring(5));
+	System.out.println(s1.substring(5,10));
+	System.out.println(s1.startsWith("apt"));
+	System.out.println(s1.endsWith("er"));
+	System.out.println(s1.replace("center","Education"));
+	
+	String ss="aptech  computer center,mumbai";
+	System.out.println(ss);
+                  System.out.println(ss.replace("mumbai","Bangalore"));
+	char name[]=s1.toCharArray();
+	int leng=name.length;
+	System.out.println(leng);
+                  for(int i=0;i<leng;i++)
+	{
+		System.out.println(name[i]);
+	}
+	}
+
+}
+---------------------------------------------------------------------------
+Example -2 
+-------------------------
+class concatenation
+{  public static void main(String args[])
+{  int age=25;
+StringBuffer s=new StringBuffer(" She  is ");
+StringBuffer s1=new StringBuffer(" Hello to HP ");
+System.out.println("string buffer="+s);
+System.out.println("s append="+s.append(age));
+System.out.println("s append="+s.append(" years old."));
+System.out.println("entire string="+s.toString());//convert object to string
+System.out.println("length="+s.length());
+System.out.println("capacity="+s.capacity());
+System.out.println("s1="+s1);
+System.out.println("charAt="+s1.charAt(1));
+s1.setCharAt(1,'i');
+s1.setLength(5);
+System.out.println("s1="+s1);
+System.out.println("set insert="+s1.insert(5,"welcome"));
+System.out.println("to delete="+s1.delete(5,6));
+System.out.println("to reverse="+s1.reverse());
+System.out.println(s1);
+}}
+------------------------------------------------------------------------------------------
 
