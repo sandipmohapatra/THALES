@@ -1,0 +1,113 @@
+swing:- 
+JFC:-java foundation class
+1)They are a group of classes which are developed as an extension to java.awt.package .It containes Libraries that are completely portable.
+2)JFC is pure java.
+3)This is light weight components .
+4)JFC componets will have same look and feel on all platforms.
+
+Look and feel:-JFC component will have same look and feel on all platforms.Swing provides the capability to change the look and feel. 
+
+Top Level Components:-
+1)JApplet 2)JDialog 3)JFrame 4)JWindow
+
+JComponent:-
+JComboBox,JLabel,JList,JMenuBar,JPanel,JPopupMenu,JScrollBar,JScrollPane,JTable,
+JTree,JOptionPane,JProgressBar,JRootPane,JSeparator,JSlider,JSplitPane,JTabbedPane,
+JToolBar,JToolTip,JColorChooser,JTextComponent,JFileChooser,JLayeredPane,
+JEditorPane,JTextPane,JTextArea,JTextField,JPasswordField
+
+Abstract Button:-
+JToggleButton,JButton,JMenuItem,JCheckBox,JRadioButton,JMenu,
+JRadioButtonMenuItem,JCheckButtonMenuItem
+
+Layout Manager:-
+1)FlowLayout
+2)BorderLayout
+3)GridLayout
+4)CardLayout
+5)NullLayout
+
+Component ->Button 
+Listener->ActionListener
+ListenerMethod->actionPerformed(ActionEvent e)
+
+Component ->CheckBox 
+Listener->ItemListener
+ListenerMethod->itemStateChanged(ItemEvent e)
+
+Component ->CheckBoxGroup 
+Listener->ItemListener
+ListenerMethod->itemStateChanged(ItemEvent e)
+
+Component ->TextField 
+Listener->ActionListener,FocusListener
+ListenerMethod->actionPerformed(ActionEvent e),focusGained(FocusEvent e),
+		focusLost(FocusEvent e)
+
+Component ->Window
+Listener ->WindowListener
+ListenerMethods->1) windowOpened(WindowEvent e)
+	2)windowClosing(WindowEvent e)
+	3)windowClosed(WindowEvent e)
+	4)windowIconified(WindowEvent e)
+	5)windowDeiconified(WindowEvent e)	
+	6)windowActivated(WindowEvent e)
+	7)windowDeactivated(WindowEvent e)
+
+Component->Mouse
+Listener->MouseListener
+ListenerMethods->1)mouseClicked(MouseEvent e)
+		2)mousePressed(MouseEvent e)
+		3)mouseReleased(MouseEvent e)
+		4)mouseEntered(MouseEvent e)
+		5)mouseExited(MouseEvent e)
+
+Component ->KeyBoard
+ListenerMethod->KeyListener
+ListenerMethod->1)keyTyped(KeyEvent e)
+		2)keyPressed(KeyEvent e)
+		3)keyReleased(KeyEvent e)
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+LayoutManager:-
+1)FlowLayout:-It is used to arrange compoments in rows across the width of the container.
+FlowLayout components automatically wrap to next row when required.
+
+2)GridLayout:-use simple rows and column grid.
+
+3)BorderLayout:-In this components can be placed in 5 sections north,south,east,west and center.
+
+4)cardLayout:-It uses panes and buttons to shift from one pane to other.
+
+5)GridBagLayout:-It is same as GridLayout but the Grids can be resized.
+
+
+
+A event listener is the feature of java that handles the several events for the several objects.such as mouseevent,keyevent,textevent etc.Classes for helping in implementing event listeners are present in the java.awt.event.*; package. 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
