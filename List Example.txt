@@ -1,0 +1,46 @@
+import java.util.*;
+public class Employee{
+
+	private int empId;
+	private String empName;
+	private double empSalary;
+
+	Employee(int empId, String empname, double empsalary)
+	{
+		this.empId=empId;
+		this.empName=empname;
+		this.empSalary=empsalary;
+	}
+
+
+	@Override
+public String toString()
+	{
+	return empId+"\t"+empName+"\t\t"+empSalary;
+	}
+
+
+}
+---------------------------------------------------------------------
+import java.util.*;
+public class first {
+	public static void main(String[] args) 
+	{
+			
+	LinkedList li=new LinkedList();
+		Employee ob=new Employee(1, "amit", 34000.60);
+		Employee ob1=new Employee(2, "peter", 35000.60);
+		
+		li.add(ob);
+		li.add(ob1);
+		
+		Iterator it=li.iterator();
+		
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+	}
+		
+	}
+
+}
