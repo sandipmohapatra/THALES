@@ -1,0 +1,58 @@
+Eclipse Debug:-
+
+Bug:- It is a problem in application. Might be error/exception, wrong output, 
+      warnings..etc.
+
+--Bug Code--
+ void withDrawMoney(int accNum,double amtWtd){
+	double bal=getBal(accNum);
+	bal = bal + amtWtd; //bug code
+ }
+-----------
+Debug: It is a process of Identify bug in application.
+
+*)Debug is not used to fix bug. It is used to identify bug.
+  After identity it must be fixed by programmer/Dev..etc
+
+Q)How can we do Debug?
+A)We should indetify module where it is not working properly.
+  Like User module, Admin Module, Payment Module..etc
+  After Identifying module we should check code 
+  block by block or line by line.
+
+  IDE-STS/Eclipse Debug Tool (Shortcuts)
+
+
+*)Breakpoint: To debug app, we should create atleast one breakpoint
+            Entry/Start point, Pause Point, next block points.
+
+----------------------------------------------------------------------------
+        Key                        Description
+----------------------------------------------------------------------------
+   Ctrl + F11                   Run Application at a time(all lines executed)
+
+    Ctrl+Shift+B                Create/Remove Breakpoints in code
+
+    ctrl+alt+B                  Enable/Disable Breakpoints
+
+    F11                         Execute App step by Step/Debug App
+   
+    F5                         (Step Into) Go inside method call.
+
+    F6                          Execute Current line goto next line(Step Over)
+
+    F7                          (Step Return) Come out of method, to called method
+
+    F8                           (Resume)Finish Execution/Next Nearest Break.
+
+
+    ctrl+shift+I               Inspect/Check an Expression value(select excepression
+                                         and execute key)
+
+---------------------------------------------------------------------------------
+
+*)Remove Breakpoints  : To remove all breakpoints at a time use this option (xx Symbol)
+
+*) Disable Breakpoints : While executing app Bug is found or no need of executing
+        other breakspoints then skip execution of other breakpoints by 
+	disable them (ctrl+alt+B)
